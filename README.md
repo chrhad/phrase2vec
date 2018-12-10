@@ -5,6 +5,8 @@ This is an extension of word2vec to learn n-gram (phrase) embeddings as describe
 
 Mikel Artetxe, Gorka Labaka, and Eneko Agirre. 2018. **[Unsupervised Statistical Machine Translation](https://arxiv.org/pdf/1809.01272.pdf)**. In *Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing (EMNLP 2018)*.
 
+Further extended to include code to train embeddings directly from a compressed (gzipped) file.
+
 If you use this software for academic research, please cite the paper in question:
 ```
 @inproceedings{artetxe2018emnlp,
@@ -25,5 +27,7 @@ Usage is equivalent to word2vec, with the addition of an optional parameter `--p
            -phrases PHRASES.TXT \
            -output OUTPUT.TXT
 ```
+
+In order to train from a compressed file, simply replace `./word2vec` by `./word2vec-zlib`.
 
 For more details on word2vec, please refer to the original README at `README-original.txt`.
